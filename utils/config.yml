@@ -1,0 +1,27 @@
+TRAIN:
+  CHECKPOINT_DIR: './logs/train/'
+  MAX_TO_KEEP: 10
+  LEARNING_RATE: 0.0005
+  MAX_STEP: 12000
+  IS_PRETRAIN: False
+  DROP_OUT: 0.7
+  BATCH_SIZE: 32
+
+TEST:
+ MODEL_PATH: './logs/train'
+ DROP_OUT: 1
+ BATCH_SIZE: 16
+
+VAL:
+
+DATA:
+  N_CLASSES: 2
+
+  IMAGE_SIZE:
+    WIDTH: 224
+    HEIGHT: 224
+    DEPTH: 3
+  DATA_DIR: './chest_xray/train/'
+  VAL_DIR: './chest_xray/val/'
+  TEST_DIR: './chest_xray/test/'
+  IS_SHUFFLE: True
