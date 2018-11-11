@@ -129,7 +129,7 @@ class NetWork(Net):
         fc6_drop = self.dropout('fc6_drop',fc6,self.drop)
         
         
-        self.logits = self.fc('los3_classifier', fc6_drop, out_nodes=self.config.n_classes)
+        self.logits = self.fc('loss_classifier', fc6_drop, out_nodes=self.config.n_classes)
 
         self.cal_loss(self.logits, self.y)
         self.cal_accuracy(self.logits, self.y)
