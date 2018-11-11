@@ -2,7 +2,7 @@
 a simple CNN  achieve best performence on Kaggle dataset  chest X-Ray Images(Penumonia)
 
 
-a 6 layers convolutional neural network with 1.72million prarameters achieves best performance on dataset from Kaggle Chest X-Ray Images(Pneumonia) , dataset can be accessed from https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia.
+a 7 layers convolutional neural network with 1.72million prarameters achieves best performance on dataset from Kaggle Chest X-Ray Images(Pneumonia) , dataset can be accessed from https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia.
 
 to handle the imbalanced training datasets(normal:1341,penumonia:3874), we generate new negtive samples using ImageDataGenerator() from keras,this improve precision a lot. Another tactics is mutiply the classifying loss function by a weight conffient,this also helpful to improve the performance of the network.
 
