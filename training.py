@@ -138,7 +138,7 @@ def test():
         test_label_argmax = np.argmax(current_label_one_hot,1)
             
 #            recall = recall_score(test_label_argmax,test_logits)
-        for i in test_logits:
+        for i in range(test_logits.shape[0]):
             if test_logits[i]==0 and test_label_argmax[i]==0:
                 tn_all+=1
             if test_logits[i]==0 and test_label_argmax[i]==1:
