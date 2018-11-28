@@ -18,4 +18,4 @@ Config hyperparameters in config.yml file.
 
 To train a model: $ python training.py
 
-After 11000 iterations  recall is 0.9766 precision is 0.9470 on the test datasets,and F1 Score is 0.9616
+After 11000 iterations  recall is 0.897 precision is 0.904 on the test datasets.
